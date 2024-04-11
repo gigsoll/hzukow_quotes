@@ -19,7 +19,7 @@ function Quote() {
     "А чому у вас все в блокноті? Треба архіви робити"
 ];
   const quote = quotes[Math.floor(Math.random() * quotes.length)]
-  return (<p className="quote">{quote}</p>)
+  return (<div className="quote">{quote}</div>)
 }
 
 function App() {

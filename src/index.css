@@ -3,14 +3,14 @@ body {
   font-size: 28px;
 }
 .quote {
-  width: fit-content;
-  text-align: center;
-  position: relative;
-  top: 45vh;
+  background-color:hsl(86, 65%, 69%);
+  border-radius: 10px;
+  box-shadow: black 10px 10px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  border-radius: 10px;
-  box-shadow: black 10px 10px;
-  background-color: hsl(86, 65%, 69%);
+  position: relative;
+  text-align: center;
+  top: 45vh;
+  width: fit-content;
 }

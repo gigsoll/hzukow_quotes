@@ -1,4 +1,5 @@
 import './App.css';
+import manDotNet from './zhukov.png'
 
 function Quote() {
   const quotes = [
@@ -16,15 +17,20 @@ function Quote() {
     "Ви що не знаєте що таке розрив сторінки?",
     "Ну то зразок був не найкращої якості",
     "Я вирішив — ви змушені",
-    "А чому у вас все в блокноті? Треба архіви робити"
+    "А чому у вас все в блокноті? Треба архіви робити"  
 ];
   const quote = quotes[Math.floor(Math.random() * quotes.length)]
   return (<div className="quote">{quote}</div>)
 }
 
+function Face() {
+  return <img img src={manDotNet} alt="Жуков" className="manDotNet"/>;
+}
+
 function App() {
   return (
     <div className="App">
+      <Face></Face>
       <Quote></Quote>
     </div>
   );

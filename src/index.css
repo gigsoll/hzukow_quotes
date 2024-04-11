@@ -30,3 +30,9 @@ body {
 body {
   background-color: hsl(209, 60%, 63%);
 }
+
+@media (max-width: 890px) {
+  .App {
+    flex-direction: column;
+  }
+}

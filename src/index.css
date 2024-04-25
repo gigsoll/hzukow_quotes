@@ -33,6 +33,6 @@ body {
 
 @media (max-width: 890px) {
   .App {
-    flex-direction: column;
+    flex-direction: column    ;
   }
 }

@@ -1,22 +1,27 @@
 import './App.css';
-import manDotNet from './img/derech.jpg'
 import quotes from './quotes.json';
+
+var property;
 
 function Quote() {
   const randomProp = obj => Object.keys(obj)[(Math.random() * Object.keys(obj).length) | 0];
-  let property = randomProp(quotes)
+  property = randomProp(quotes)
   const quote = quotes[property][Math.floor(Math.random() * quotes[property].length)]
-  return (<div className="quote">{quote}</div>)
+  return (
+    <div className='App'>
+      <Face property={property} />
+      <div className="quote">{quote}</div>
+    </div>
+  );
 }
 
 function Face() {
-  return <img img src={manDotNet} alt="Жуков" className="manDotNet"/>;
+  return <img img src={require(`./img/${property}.jpg`)} alt="Жуков" className="manDotNet"/>;
 }
 
 function App() {
   return (
     <div className="App">
-      <Face></Face>
       <Quote></Quote>
     </div>
   );
